@@ -34,7 +34,7 @@ function NavBar() {
     { link: "Service", path: "/services" },
     { link: "About", path: "/about" },
     { link: "Products", path: "/products" },
-    { link: "Templates", path: "/" },
+    { link: "Forms", path: "/formbuilder" },
     { link: "FAQ", path: "/" },
   ];
 
@@ -45,13 +45,11 @@ function NavBar() {
           isSticky
             ? "sticky top-0 left-0 right-0 border bg-white duration-200"
             : ""
-        }`}
-      >
+        }`}>
         <div className="flex justify-between items-center text-base gap-8">
           <Link
             to={"/"}
-            className="text-2xl font-semibold flex items-center space-x-3 m-1"
-          >
+            className="text-2xl font-semibold flex items-center space-x-3 m-1">
             <img
               src={Logo}
               alt="Logo"
@@ -71,8 +69,7 @@ function NavBar() {
                 key={id}
                 to={path}
                 offset={-100}
-                className="block text-base text-gray900 hover:text-green-500 first:font-medium"
-              >
+                className="block text-base text-gray900 hover:text-green-500 first:font-medium">
                 {link}
               </Link>
             ))}
@@ -89,8 +86,7 @@ function NavBar() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-neutralDGrey focus:outline-none focus:text-gray-500"
-            >
+              className="text-neutralDGrey focus:outline-none focus:text-gray-500">
               {isMenuOpen ? (
                 <FaX className="h-6 w-6" />
               ) : (
@@ -104,15 +100,13 @@ function NavBar() {
         <div
           className={`space-y-4 px-4 mt-16 py-5 md:hidden bg-green-400 ${
             isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
-          }`}
-        >
+          }`}>
           {navItems.map(({ link, path, id }) => (
             <Link
               key={id}
               to={path}
               offset={-100}
-              className="block text-base  text-white hover:text-black first:font-medium"
-            >
+              className="block text-base  text-white hover:text-black first:font-medium">
               {link}
             </Link>
           ))}
