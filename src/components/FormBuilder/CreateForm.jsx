@@ -5,7 +5,7 @@ import { BsFolder2Open } from "react-icons/bs";
 import ColorLensIcon from "@mui/icons-material/ColorLens";
 import IconButton from "@mui/material/IconButton";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { googleFormImg } from "./";
+import { googleFormImg } from "./formAssets";
 import Avatar from "../Avatar/Avatar";
 import Button from "@mui/material/Button";
 import CenteredTabs from "./CenteredTabs";
@@ -16,7 +16,7 @@ const CreateForm = () => {
     <>
       <div className="form-header flex items-center justify-between  bg-white my-3 mx-6">
         <div className="form-header-left flex items-center justify-evenly">
-          <img src={googleFormImg} alt="" className="w-11 h-10" />
+          <img src={googleFormImg} alt="create-img" className="w-11 h-10" />
           <input
             type="text"
             placeholder="Untitled Form"
