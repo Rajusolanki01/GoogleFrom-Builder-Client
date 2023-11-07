@@ -4,7 +4,10 @@ import AddToDriveRoundedIcon from "@mui/icons-material/AddToDriveRounded";
 import FolderOpenRoundedIcon from "@mui/icons-material/FolderOpenRounded";
 import { IconButton } from "@mui/material";
 import MoreVert from "@mui/icons-material/MoreVert";
-import { recentProduct } from "./formAssets";;
+import { recentProduct } from "./formAssets";
+
+
+
 const MainBody = () => {
   return (
     <div className="main-body bg-white mx-40">
