@@ -7,9 +7,8 @@ import IconButton from "@mui/material/IconButton";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { googleFormImg } from "./formAssets";
 import Avatar from "../Avatar/Avatar";
-import Button from "@mui/material/Button";
 import CenteredTabs from "./CenteredTabs";
-
+import QuestionForm from "./QuestionForm";
 
 const CreateForm = () => {
   return (
@@ -19,9 +18,8 @@ const CreateForm = () => {
           <img src={googleFormImg} alt="create-img" className="w-11 h-10" />
           <input
             type="text"
-            placeholder="Untitled Form"
-            className="outline-none border-none text-m font-semibold ml-4 leading-6 text-[#202124] w-32"
-          ></input>
+            placeholder="Untitled form"
+            className="outline-none  focus:ring-white focus:border-white border-none text-m font-semibold ml-4 leading-6 text-[#202124] w-32"></input>
           <IconButton>
             <BsFolder2Open className="text-[#202124] text-2xl focus:border-b-black" />
           </IconButton>
@@ -45,14 +43,9 @@ const CreateForm = () => {
           <IconButton>
             <FiSettings className="text-[#202124] text-2xl focus:border-b-black m-1" />
           </IconButton>
-          <Button
-            variant="contained"
-            color="success"
-            href="#contined-buttons m-1"
-           style={{padding:"3px",backgroundColor:"lightgreen",color:"black",fontWeight:600}}
-          >
-            Send
-          </Button>
+          <button className="px-4 py-1 bg-green-500 text-white rounded hover:bg-neutralDGrey transition-all duration-300 ">
+            SEND
+          </button>
           <IconButton>
             <MoreVertIcon className="text-[#202124] text-2xl focus:border-b-black m-1" />
           </IconButton>
@@ -62,6 +55,7 @@ const CreateForm = () => {
         </div>
       </div>
       <CenteredTabs />
+      <QuestionForm />
     </>
   );
 };

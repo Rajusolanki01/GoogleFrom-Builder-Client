@@ -1,15 +1,15 @@
 import React from "react";
-// "import {
-//   brandLogo1,
-//   brandLogo2,
-//   brandLogo3,
-//   brandLogo4,
-//   brandLogo5,
-//   brandLogo6,
-//   icon1,
-//   icon2,
-//   icon3,
-// } from "./ServiceAssets";"
+import {
+  brandLogo1,
+  brandLogo2,
+  brandLogo3,
+  brandLogo4,
+  brandLogo5,
+  brandLogo6,
+  icon1,
+  icon2,
+  icon3,
+} from "./ServiceAssets";
 
 function Services() {
   const services = [
@@ -18,21 +18,21 @@ function Services() {
       title: "Membership Organisations",
       description:
         "Our membership management software provides full automation of membership renewals and payments",
-      // image: "icon1",
+      image: icon1,
     },
     {
       id: 2,
       title: "National Associations",
       description:
         "Our membership management software provides full automation of membership renewals and payments",
-      // image: icon2,
+      image: icon2,
     },
     {
       id: 3,
       title: "Clubs And Groups",
       description:
         "Our membership management software provides full automation of membership renewals and payments",
-      // image: icon3,
+      image: icon3,
     },
   ];
   return (
@@ -44,13 +44,13 @@ function Services() {
         </p>
 
         <div className="my-12 flex flex-wrap justify-between items-center gap-16">
-          <img src={"brandLogo1"} alt="brandLogo1" />
-          <img src={"brandLogo2"} alt="brandLogo2" />
-          <img src={"brandLogo3"} alt="brandLogo3" />
-          <img src={"brandLogo4"} alt="brandLogo4" />
-          <img src={"brandLogo5"} alt="brandLogo5" />
-          <img src={"brandLogo6"} alt="brandLogo6" />
-          <img src={"brandLogo2"} alt="brandLogo2" />
+          <img src={brandLogo1} alt="brandLogo1" />
+          <img src={brandLogo2} alt="brandLogo2" />
+          <img src={brandLogo3} alt="brandLogo3" />
+          <img src={brandLogo4} alt="brandLogo4" />
+          <img src={brandLogo5} alt="brandLogo5" />
+          <img src={brandLogo6} alt="brandLogo6" />
+          <img src={brandLogo2} alt="brandLogo2" />
         </div>
       </div>
 

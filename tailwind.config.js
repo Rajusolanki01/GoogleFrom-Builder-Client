@@ -38,6 +38,9 @@ module.exports = {
     fontFamily: {
       body: [
         "Inter",
+        "Google sans",
+        "Roboto",
+        "Arial",
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
@@ -55,6 +58,8 @@ module.exports = {
       ],
       sans: [
         "Inter",
+        "Roboto",
+        "Arial",
         "ui-sans-serif",
         "system-ui",
         "-apple-system",

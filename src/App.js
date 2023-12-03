@@ -11,7 +11,7 @@ import About from "./components/About/About";
 import Product from "./components/Product/Product";
 import Template from "./components/FormBuilder/Template";
 import CreateForm from "./components/FormBuilder/CreateForm";
-import CenteredTabs from "./components/FormBuilder/CenteredTabs";
+import OnlyIfNotLoggedIn from "./components/Require User/OnlyIfNotLoggedIn"
 
 function App() {
   return (
@@ -26,10 +26,11 @@ function App() {
           </Route>
           <Route path="/formbuilder" element={<Template />} />
           <Route path="/create-form/:id" element={<CreateForm />} />
-          <Route path="/create-form/:id" element={<CenteredTabs />} />
         </Route>
+        <Route element={<OnlyIfNotLoggedIn />}>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        </Route>
       </Routes>
     </div>
   );
